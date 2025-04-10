@@ -11,7 +11,7 @@ def attempt_reservation(event_id, available_seats, user_name, isolation_level):
             host="localhost",
             database="reservas_evento",
             user="postgres",
-            password="0512"  # Reemplaza con tu contraseña
+            password="0512"
         )
         conn.set_client_encoding('UTF8')
         conn.set_isolation_level(isolation_level)
